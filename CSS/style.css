@@ -556,6 +556,18 @@ table{
     border: rgba(0, 0, 0, 0.2) 0.8px solid;
     border-radius: 10px;
 }
+.pay {
+    background-color: #66cbf3;
+    font-size: 1.1vw;
+    color: rgb(50, 34, 34);
+    opacity: 0.9;
+    width: 150px;
+    
+}
+.pay:hover{
+    color: rgb(253, 243, 229);
+    opacity: 1.2;
+}
 
 /* Media queries */
 @media all and (max-width: 913px){
@@ -630,7 +642,11 @@ table{
     }
     .PD{
         font-size: 3.3vw;
-    }    
+    } 
+    .pay{
+        font-size: medium;
+        width: 100px;
+    }   
 }
 
 @media screen and (max-width: 600px){
@@ -664,6 +680,7 @@ table{
         margin-right: 2rem;
         font-weight: bold;
     }
+    
 }
 @media screen and (max-width: 1000px){
     .DU{
@@ -683,6 +700,7 @@ table{
     }
 
 }
+
 
 
 

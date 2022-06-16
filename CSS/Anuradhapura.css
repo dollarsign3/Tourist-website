@@ -229,10 +229,18 @@ nav ul ul li {
 .Himg {
     margin-left: 100px;
     margin-top: 30px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
 }
 .Himg1 {
     margin-top: 30px;
     margin-right: 100px;
+    animation-name: fadeIn2;
+    animation-duration: 3s;
+    animation: fadeIn2 5s;
+    -webkit-animation: fadeIn2 5s;
 }
 .HH {
     font-size: 1.9vw;
@@ -373,4 +381,26 @@ footer .copyright {
     }
     
    
+}
+
+/* Animations */ 
+
+@keyframes fadeIn {
+
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn2 {
+
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes fadeIn2 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
