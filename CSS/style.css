@@ -165,6 +165,11 @@ nav ul ul li {
 .mainh{
     text-align: center;
 }
+.mainp{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 2.1vw;
+}
 .bottom-left {
     position:absolute;
     left: 0px;
@@ -355,6 +360,8 @@ footer .copyright {
 /*================================================================================*/
 
 /* Wild Life Attraction page */
+
+
 .MainImg{
     width: 100%;
     height: auto;
@@ -594,9 +601,9 @@ table{
     p{
         font-size: calc(.5vw + 1rem);
     }
-    .mainp{
+    /*.mainp{
         font-size: calc(.5vw + 4rem);
-    }
+    }*/
     .WP{
         font-size: calc(.5vw + 1rem);
         margin: 20px 12px;
@@ -607,9 +614,7 @@ table{
     .culture img{
         margin: 20px;
     }
-    .Wtxt {
-        font-size: calc(.5vw + 1rem);
-    }
+    
     .Mimg{
         width: 100%;
         height: auto;
@@ -680,6 +685,17 @@ table{
         margin-right: 2rem;
         font-weight: bold;
     }
+    .mainp{
+        
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 2.8vw;
+    }
+    .mainh{
+        font-size: 4.1vw;
+        margin-top: 20px;
+    }
+    
     
 }
 @media screen and (max-width: 1000px){

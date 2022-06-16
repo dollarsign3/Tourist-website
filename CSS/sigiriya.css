@@ -173,6 +173,11 @@ nav ul ul li {
 .mainh{
     text-align: center;
 }
+.mainp{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 2.1vw;
+}
 .bottom-left {
     position:absolute;
     left: 0px;
@@ -331,6 +336,11 @@ footer .copyright {
 @media all and (max-width: 613px){
     .mainh{
         font-size: xx-large;
+    }
+    .mainp{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 2.8vw;
     }
 } 
 

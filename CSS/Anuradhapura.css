@@ -173,6 +173,11 @@ nav ul ul li {
 .mainh{
     text-align: center;
 }
+.mainp{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 2.1vw;
+}
 .bottom-left {
     position:absolute;
     left: 0px;
@@ -359,6 +364,12 @@ footer .copyright {
     .HP{
         font-size: 2vw;
     }
+    .mainp{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 2.1vw;
+    }
+    
 }
 @media all and (max-width: 550px){
     .flexact img {
@@ -378,6 +389,12 @@ footer .copyright {
     }
     .Himg {
         margin-left: 79px;
+    }
+    .mainp{
+        font-size: 2.8vw;
+    }
+    .HP{
+        margin: 0 15px;
     }
     
    
