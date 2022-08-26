@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Home page of tourist attraction website">
+        <title>Visit Sri Lanka - Home</title>
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="manifest" href="./images/site.webmanifest">
+        <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head> 
+    
+    
+           
+    <body id="tickets-body">
+        <div class="mainbackground">
+            <div id="overlay">
+                <div class="popup-ticket" id="popup-ticket">
+                    <img src="./images/tick.png" alt="popup tick icon">
+                    <h2>Thank You!</h2>
+                    <p>Your Order Has Successfully Completed. Thanks!</p>
+                    <button type="button" id="okbtn">OK</button>     
+                </div>
+            </div>
+            <div class="backpage">
+                <a href="Activities.html">Go back<img class="back" src="./images/back.png" alt="back icon"></a> 
+            </div>
+            <form id="ticket_form">
+                <h1 align="center" class="tchead">Tickets Booking</h1>
+                <div class="main-tc">              
+                    <div class="tickets-form">
+                        <label for="Amount check"><strong> Tickets Options: </strong></label>
+                        <div class="drop1">
+                            <select name="tickets-options" id="tickets-opt" required>
+                                <option value="" selected>Please choose a ticket</option>
+                                <option value="5000">Foreign Adult Pass</option>
+                                <option value="2500">Foreign Child Pass</option>
+                                <option value="1000">Local Adult Pass</option>
+                                <option value="500">Local Child Pass</option>
+                                <option value="4500">Annual Pass  (Local)</option>
+                                <option value="15000">Annual Pass  (Foreign)</option>
+                            </select>
+                        </div>
+                        <label for="no of tickets"><strong>No of tickets: </strong>(For Children under age 3,<strong> tickets not required</strong>)</label>
+                        <input type="number" placeholder="Please choose no of tickets" min="1" id="num"  required pattern="[0-9]+" title="please enter valid amount" >
+                        <label for="duration"><strong>Duration: <strong></label>
+                        <div class="drop1">
+                            <select name="duration" id="duration" required>
+                                <option value="" selected>Please choose a duration</option>                          
+                                <option value="3h">3 Hours</option>
+                                <option value="12h">1/2 Day</option>
+                                <option value="1d">Full Day</option>
+                                <option value="2d">2 Days</option>
+                            </select>
+                        </div>
+                        <label for="extras"><strong>Extras: (Food Token)</strong></label>
+                        <input type="number" placeholder="Please choose no of food Tokens" min="0" id="food" pattern="[0-9]+" title="please enter valid amount" >
+                        <br>
+                        <button type="submit" class="add-order" id="add">Add to Order <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="submit" class="add-to-fav" id="add-fav"> Add Favourite <i class="fa fa-heart" id="h2" ></i><i class="fa fa-heart-o" id="h1"></i></button>
+                        <button type="submit" class="order-fav" id="order-fav"> Order Favourite <i class="fa fa-cart-plus"></i> </button>
+                        <button type="submit" class="check-loyalty" id="loyalty"> Check Loyalty Points <i class="fas fa-award"></i></button>
+                        
+                    </div>
+                    
+                    <div class="tickets-form-right">
+                        <div class="over">
+                            <table class="total-item" id="total-item">
+                                <thead>
+                                    <tr>
+                                        <th>Current order(s)</th>
+                                        <th>Type</th>
+                                        <th>Qty</th>
+                                        <th>Duration</th>
+                                        <th>Extras</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="remove">
+                                    <tr id="blank">
+                                        <td colspan="7">No Orders has been Placed Currently</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <table class="total-table">
+                            <tbody>
+                                <tr>
+                                    <td><h5>Current order cost: </h5></td>
+                                    <td align="right"><div id="current-order-cost"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Overall order(s): </h5></td>
+                                    <td align="right"><div id="Overall-order" ></div></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Overall order cost: </h5></td>    
+                                    <td align="right"><div id="Overall-order-cost"></div></td>
+                                    <td align="right"><button class="place-order" id="place" data-modal-target="#popup-ticket"> Place Order  <i class="fas fa-shopping-bag" aria-hidden="true"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                                
+                    </div>               
+                </div>
+            </form>
+        </div>
+        
+        
+    </body>
+    
+    <script src="./Java Scripts/ticket.js"></script>
+    
+</html>
