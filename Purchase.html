@@ -109,7 +109,7 @@
                             <h2 align="center">Payment Information</h2>
                                 <label for="Amount check"><strong>Amount: </strong></label>
                                 <div class="drop1" id="amount-drop">
-                                    <select name="Amount" id="amount">
+                                    <select name="Amount" id="amount" >
                                         <option value="100">Rs.100/=</option>
                                         <option value="250">Rs.250/=</option>
                                         <option value="500">Rs.500/=</option>
@@ -122,14 +122,14 @@
                                 <br> 
                                 <div class="form-control">  
                                     <label for="fname"><i class="fa fa-user"></i> First Name</label>
-                                        <input type="text" id="fname" name="firstname" placeholder="Dhanushka" >  
+                                        <input type="text" id="fname" name="firstname" placeholder="John" >  
                                         <i class="fas fa-check-circle"></i>
                                         <i class="fas fa-exclamation-circle"></i>
                                         <small>Error message</small>
                                 </div>
                                 <div class="form-control">
                                     <label for="lname"><i class="fa fa-user"></i> Last Name</label>
-                                        <input type="text" id="lname" name="lastname" placeholder="Lakshan" >
+                                        <input type="text" id="lname" name="lastname" placeholder="Fernando" >
                                         <i class="fas fa-check-circle"></i>
                                         <i class="fas fa-exclamation-circle"></i>
                                         <small>Error message</small>
@@ -158,35 +158,35 @@
                                     </div>
                                 <div class="form-control"> 
                                     <label for="cname">Name on Card</label>
-                                        <input type="text" id="cname" name="cardname" placeholder="Dhanushka Lakshan" >
+                                        <input type="text" id="cname" name="cardname" placeholder="John" >
                                         <i class="fas fa-check-circle"></i>
                                         <i class="fas fa-exclamation-circle"></i>
                                         <small>Error message</small>
                                 </div>
                                 <div class="form-control"> 
                                     <label for="ccnum">Credit card number</label>
-                                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" >
+                                        <input type="text" id="ccnum" name="cardnumber"  placeholder="1111-2222-3333-4444" minlength="12" maxlength="16" required>
                                         <i class="fas fa-check-circle"></i>
                                         <i class="fas fa-exclamation-circle"></i>
                                         <small>Error message</small>
                                 </div>
                                 <div class="form-control"> 
                                     <label for="expmonth">Expire Month</label>
-                                        <input type="text" id="expmonth" name="expmonth" placeholder="11"  maxlength="2">
+                                        <input type="text" id="expmonth" name="expmonth"  placeholder="11" minlength="2"  maxlength="2" required>
                                         <i class="fas fa-check-circle"></i>
                                         <i class="fas fa-exclamation-circle"></i>
                                         <small>Error message</small>
                                 </div>
                                 <div class="form-control"> 
                                     <label for="expyear">Expire Year</label>
-                                        <input type="text" id="expyear" name="expireyear" placeholder="2024"  maxlength="4">
+                                        <input type="text" id="expyear" name="expireyear" placeholder="2024"  minlength="4" maxlength="4" required>
                                         <i class="fas fa-check-circle"></i>
                                         <i class="fas fa-exclamation-circle"></i>
                                         <small>Error message</small>
                                 </div>
                                 <div class="form-control"> 
                                     <label for="cvv">CVV</label>
-                                        <input type="text" id="cvv" name="cvv" placeholder="352" maxlength="3" minlength="3" >
+                                        <input type="text" id="cvv" name="cvv" placeholder="352" maxlength="3" minlength="3" required>
                                         <i class="fas fa-check-circle"></i>
                                         <i class="fas fa-exclamation-circle"></i>
                                         <small>Error message</small>

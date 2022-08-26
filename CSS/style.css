@@ -84,7 +84,7 @@ nav ul ul li {
 }
 @media screen and (max-width: 968px) {
     nav ul {
-        margin: right;
+
         float: left;
 
     }
@@ -181,7 +181,6 @@ nav ul ul li {
     bottom: 4px;
     background: rgb(224, 224, 224);
     background: rgba(0, 0, 0, 0.5);
-    max-width: auto;
     padding: 0px;
     height: auto;
     
@@ -447,16 +446,9 @@ wildlife-table{
 }
 
 
-.wildlife-table.Img{ max-width: 100%; height: 10px; width: auto\\9; /* ie8 */ }
-
-
-
+.wildlife-table.Img{ max-width: 100%; height: 10px; width: auto; /* ie8 */ }
 
 /*================================================================================*/
-
-
-
-
 
 /* Beaches page */
 
@@ -544,6 +536,7 @@ wildlife-table{
     background-image: url('../images/background.jpg');
     background-size: cover;
 	background-position: center;
+    background-repeat: no-repeat;
     
 }
 #tickets-body::before {

@@ -54,56 +54,56 @@ function checkInputs(){
         valid = true;
     }
     if (lnameval == ""){
-        setErrorFor(lname, 'First name cannot be blank');
+        setErrorFor(lname, 'Last name cannot be blank');
         valid = false;
     } else {
         setSuccessFor(lname);
         valid = true;
     }
     if (emailval == ""){
-        setErrorFor(email, 'First name cannot be blank');
+        setErrorFor(email, 'Email cannot be blank');
         valid = false;
     } else {
         setSuccessFor(email);
         valid = true;
     }
     if (cardNameval == ""){
-        setErrorFor(cardName, 'First name cannot be blank');
+        setErrorFor(cardName, 'Card name cannot be blank');
         valid = false;
     } else {
         setSuccessFor(cardName);
         valid = true;
     }
     if (creditCardNumbval == ""){
-        setErrorFor(creditCardNumb, 'First name cannot be blank');
+        setErrorFor(creditCardNumb, 'Card number cannot be blank');
         valid = false;
     } else {
         setSuccessFor(creditCardNumb);
         valid = true;
     }
     if (expmonthval == ""){
-        setErrorFor(expmonth, 'First name cannot be blank');
+        setErrorFor(expmonth, 'Expire month cannot be blank');
         valid = false;
     } else {
         setSuccessFor(expmonth);
         valid = true;
     }
     if (expyearval == ""){
-        setErrorFor(expyear, 'First name cannot be blank');
+        setErrorFor(expyear, 'Expire year cannot be blank');
         valid = false;
     } else {
         setSuccessFor(expyear);
         valid = true;
     }
     if (cvvVal == ""){
-        setErrorFor(cvv, 'First name cannot be blank');
+        setErrorFor(cvv, 'CVV number cannot be blank');
         valid = false;
     } else {
         setSuccessFor(cvv);
         valid = true;
     }
     if (addval == ""){
-        setErrorFor(address, 'First name cannot be blank');
+        setErrorFor(address, 'Address cannot be blank');
         valid = false;
     } else {
         setSuccessFor(address);
